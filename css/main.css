@@ -512,6 +512,30 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
 
 
 /*--about-page--*/
+.flex-grid-about {
+  display: flex;
+}
+.about-left {
+  flex: 1;
+  background: white;
+  flex-basis: 50%;
+  height: 500px;
+}
+
+.about-right {
+  flex: 1;
+  background: #212426;
+  flex-basis: 50%;
+  height:500px;
+}
+
+
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
 .about-column-two h1 {
   color: #212426;
   font-size:42px;
