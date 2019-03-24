@@ -421,7 +421,7 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
   height: 50%;
 }
 .image-three {
-  background-image: url("../images/mega-scene-cropped.png");
+  background-image: url("../images/weather-app-concept.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -484,7 +484,7 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
 
 .casestudy-sidebar {
   flex: 1;
-  background: #f7f7f7;
+  background: #f1f1f1;
 }
 
 .casestudy-sidebar p {
@@ -512,23 +512,60 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
 
 
 /*--about-page--*/
+
+#about-link {
+  text-decoration: none;
+  padding: 0;
+}
+
 .flex-grid-about {
   display: flex;
+  flex-wrap: wrap;
+}
+.about-header {
+  flex: 1;
+  background: white;
+  flex-basis: 100%;
+  height: 50vh;
+  background-color: #f1f1f1;
 }
 .about-left {
   flex: 1;
-  background: white;
-  flex-basis: 50%;
-  height: 500px;
+  flex-basis: 40%;
+  height: 100vh;
+}
+
+.profile-photo {
+  background-image: url("../images/me-four.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  height: 100%;
+}
+
+.about-right h1 {
+  color:#212426;
+  padding:20px;
+  font-family: 'Open Sans', sans-serif;
+  line-height:24px;
+  font-size: 40px;
+}
+
+.about-right p {
+  color:#212426;
+  padding:20px;
+  font-family: 'Open Sans', sans-serif;
+  line-height:24px;
+  font-size: 16px;
 }
 
 .about-right {
   flex: 1;
-  background: #212426;
-  flex-basis: 50%;
-  height:500px;
+  background: white;
+  flex-basis: 60%;
+  height: 100vh;
 }
-
 
 
 @media (max-width: 400px) {
@@ -536,78 +573,18 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
     display: block;
   }
 }
-.about-column-two h1 {
-  color: #212426;
-  font-size:42px;
-  margin:0 auto;
-  text-align:center;
-  font-family: 'Nunito', sans-serif;
-  margin-top:28px;
-}
 
-.about-container {
-  display: inline-block;
-  grid-template-columns: 1.5fr 2fr;
-  grid-gap:1em;
-  grid-auto-rows: minmax(300px, auto);
-  width:100%;
-  margin:0 auto;
-  height:20vh;
-  background-color: white;
-}
-
-@media (max-width: 500px) {
-  .about-container {
-    flex-direction: column;
-  }
-}
-
-.about-column-one {
-    background-image: url("../images/me-three.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height:100%;
-    position:relative;
-    width:200px;
-    margin:0 auto;
-  }
-
-.about-column-two p {
-  padding:5px 10px 2px 10px;
-  font-size: 16px;
-  color:#2a2a2a;
-  font-family: 'Open Sans', sans-serif;
-  line-height:24px;
-  text-align: center;
-  margin-left: 250px;
-  margin-right: 250px;
-}
-
-@media (max-width: 800px) {
-  .about-column-two p {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-}
-
-@media (max-width: 500px) {
-  .about-column-two p {
-    margin-left: 25px;
-    margin-right: 25px;
-      font-size: 12px;
-  }
-}
 
 /*---about button---*/
-.border-parent {
+.border-parent-contact {
   position:relative;
   text-align: center;
+  padding:10px;
 }
 
-button.border {
+button.border-contact {
     border: 3px solid #222;
-    background: white;
+    background: #f1f1f1;
     color: #222;
     padding: 15px 32px;
     text-align: center;
@@ -622,12 +599,12 @@ button.border {
     transition: all 0.2s ease 0s;
 }
 
-button.border:hover {
+button.border-contact:hover {
     border-color: #9dcdb4;
     letter-spacing: 3px;
 
     }
-button.border:active {
+button.border-contact:active {
     border-color: #7c1d2f;
 }
 /*--about-page--*/
@@ -640,7 +617,6 @@ button.border:active {
   grid-auto-rows: minmax(300px, auto);
   width:100%;
   margin:0 auto;
-  height:80vh;
   background-color: white;
 }
 
@@ -651,26 +627,13 @@ button.border:active {
   }
 }
 
-.contact-column-one {
-    background-image: url("../images/weather-app-concept.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45%;
-    position:relative;
-  }
+.contact-column-two {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background:#f1f1f1;
+  height:50vh;
+}
 
-  @media (max-width: 500px) {
-    .contact-column-one {
-      height: 30%;
-    }
-  }
-
-  @media (max-width: 500px) {
-    .contact-column-two {
-      height: 100%;
-    }
-  }
 .contact-column-two p {
   padding:5px 10px 2px 10px;
   font-size: 16px;
@@ -697,10 +660,12 @@ button.border:active {
 }
 
 .contact-column-two h1 {
-  font-size: 16px;
+  color:#212426;
+  padding:20px;
+  font-family: 'Open Sans', sans-serif;
+  line-height:24px;
+  font-size: 40px;
   text-align: center;
-  margin-top:80px;
-  padding:5px 10px 2px 10px;
 }
 
 /*---contact button---*/
