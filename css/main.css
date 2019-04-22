@@ -7,7 +7,6 @@
 #f1f9f9 - pale blue
 /*--colours-end--/*
 
-
 /*--defaults--*/
 * {
      box-sizing: border-box;
@@ -1101,7 +1100,6 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
   line-height: 28px;
   width:65%;
 }
-
 
 .flex-grid-section-nuture {
   {
