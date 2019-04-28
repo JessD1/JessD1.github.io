@@ -624,7 +624,6 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
   margin-left: 45px;
   color:#212426;
   font-family: 'Open Sans', sans-serif;
-  line-height:24px;
   width:65%;
   font-size:50px;
 }
