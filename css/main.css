@@ -334,7 +334,18 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
     height: 1200px;
   }
 }
-
+@media (max-width: 400px) {
+  .flex-grid {
+    flex-direction: column;
+    height: 1200px;
+  }
+}
+@media (max-width: 300px) {
+  .flex-grid {
+    flex-direction: column;
+    height: 1200px;
+  }
+}
 .col {
   flex: 1;
 }
