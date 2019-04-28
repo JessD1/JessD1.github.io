@@ -529,6 +529,7 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
   flex-basis: 60%;
   height: 100vh;
   border-bottom: 4px solid #f1f9f9;
+height:auto;	
 }
 
 @media (max-width: 500px) {
