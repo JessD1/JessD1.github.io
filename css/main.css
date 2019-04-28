@@ -341,7 +341,7 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
 
 /* --portfolio-images--*/
 .image-one {
-  background-image: url("../images/case-study-one.jpg");
+  background-image: url("../images/case-study-one-small.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
