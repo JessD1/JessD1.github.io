@@ -264,57 +264,7 @@ a:active, a:focus {
 a:active:before, a:active:after, a:focus:before, a:focus:after {
   background:#9dcdb4;
 }
-.cta {
-  display: block;
-  margin: 0 auto;
-  color: white;
-  padding: 10px;
-  z-index:2;
-  margin-top:30px;
-  margin-bottom:60px;
-  border: 2px solid #9dcdb4;
-  width:150px;
-  border-radius: 2px;
-}
 
-.cta {
-  background:#f1f9f9;
-  color:#212426;
-  border:none;
-  position:relative;
-  height:40px;
-  line-height:30px;
-  font-size:12px;
-  padding-top:5px;
-  padding-bottom:5px;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-.cta:hover{
-  background:white;
-  color:black;
-}
-.cta:before,.cta:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #9dcdb4;
-  transition:400ms ease all;
-}
-.cta:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.cta:hover:before,.cta:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
 /*---snazzy-underline--*/
 
 #work-link {
@@ -322,6 +272,61 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
   padding: 0;
 }
 /*---header-section-end--*/
+
+/*---case-study-button--*/
+
+.wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #212426;
+  border-radius: 4px;
+  display: inline-block;
+  color: #212426;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  margin: 5px;
+  overflow: hidden;
+  padding: 0 22px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color:#212426 !important;
+  }
+}
+
+.roll-text {
+  display: block;
+  position: relative;
+  transition: all 420ms cubic-bezier(.175,.885,.32,1.275);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.roll-text:last-child {
+  color: #212426;
+}
+
+.rollover:hover .roll-text:first-child {
+  margin-top: -38px;
+}
+
+/*---case-study-button-end--*/
 
 /* -- flex-grid--*/
 .flex-grid {
