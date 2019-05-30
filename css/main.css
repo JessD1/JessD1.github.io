@@ -252,7 +252,7 @@ a:before, a:after {
   content: "";
   height: 2px;
   width: 0%;
-  background: #9dcdb4;
+  background: #364958;
   position: absolute;
   bottom: 0;
   transition: .2s all linear;
@@ -276,10 +276,10 @@ a:hover:after {
   right: 0%;
 }
 a:active, a:focus {
-  color: #9dcdb4;
+  color: #364958;
 }
 a:active:before, a:active:after, a:focus:before, a:focus:after {
-  background:#9dcdb4;
+  background:#364958;
 }
 
 /*---snazzy-underline--*/
@@ -551,7 +551,8 @@ a:active:before, a:active:after, a:focus:before, a:focus:after {
   flex-basis: 60%;
   height: 100vh;
   border-bottom: 4px solid #f1f9f9;
-height:auto;
+  height:auto;
+  background-color:#fff;
 }
 
 @media (max-width: 500px) {
@@ -619,6 +620,7 @@ height:auto;
 .flex-grid-casestudy {
   display: flex;
   flex-wrap: wrap;
+  background-color:#fff;
 }
 
 .casestudy-header {
