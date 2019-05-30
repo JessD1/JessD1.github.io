@@ -7,6 +7,7 @@
 
 #f1f9f9 - alice blue
 #364958 - navy seal
+#e7e7e7 - nice pale grey
 /*--colours-end--/*
 
 /*--defaults--*/
@@ -45,7 +46,7 @@ p {
 }
 
 .header-container {
-  height:80vh;
+  height:85vh;
   background-color:#fff;
 }
 
@@ -147,7 +148,7 @@ p {
 	color:#212426;
   text-align:center;
   font-family: 'Roboto', sans-serif;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   margin-bottom: 30px;
 }
 
