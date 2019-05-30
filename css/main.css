@@ -1,10 +1,12 @@
 /*--project name: ux portfolio--*/
 
 /*--colours--/*
-#ffffff - white
-#212426 - Charcoal
+#ffffff - pure white
+#212426 - willow charcoal
 #9dcdb4 - pale green
-#f1f9f9 - pale blue
+
+#f1f9f9 - alice blue
+#364958 - navy seal
 /*--colours-end--/*
 
 /*--defaults--*/
@@ -19,19 +21,32 @@ img {
 
 /*--typography--*/
 Open Sans
+Roboto
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
 /*--typography-end--*/
 
 
 /*---layout---*/
 .wrapper {
   margin:0px;
-  background-color: white;
+  background-color: #fff;
   height:100%;
 }
 
 .header-container {
-  height:90vh;
-  background-color:#f1f9f9;
+  height:80vh;
+  background-color:#fff;
 }
 
 @media only screen and (max-width: 500px) {
@@ -43,6 +58,11 @@ Open Sans
 /*---nav---*/
 .navcontainer {
   margin:0 auto;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color:#fff;
 }
 
 .navcontainer a {
@@ -50,12 +70,12 @@ Open Sans
   text-decoration: none;
   display:inline-block;
   color:#212426;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: 'Open Sans', sans-serif;
 }
 
 .navcontainer li {
-  float:left;
+  float:right;
   text-decoration: none;
   display:inline-block;
   color:#212426;
@@ -70,6 +90,7 @@ Open Sans
   }
 }
 
+/*
 .navcontainer li:nth-child(3) {
   float:right;
 }
@@ -103,8 +124,7 @@ Open Sans
 
 /*---header-text-h1--*/
 .header-text-container h1 {
-	color: #212426;
-	font-size:42px;
+	color: #364958;
   text-align:center;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 24px;
@@ -112,36 +132,33 @@ Open Sans
 
 @media only screen and (max-width: 800px) {
   .header-text-container h1 {
-      font-size:32px;
+      font-size:2rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .header-text-containter h1 {
-      font-size:24px;
+      font-size:1.5rem;
   }
 }
 /*---header-text-h1-end--*/
 
-/*---header-text-p how do use vw to make this typle fluid?-*/
 .header-text-container p {
 	color:#212426;
-	font-size: 17px;
   text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  z-index:2;
-  line-height: 28px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4rem;
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 800px) {
   .header-text-container p {
-      font-size:14px;
+      font-size:1rem;
   }
 }
 @media only screen and (max-width: 500px) {
   .header-text-container p {
-      font-size:12px;
+      font-size:0.75rem;
   }
 }
 /*---header-text-p-*/
