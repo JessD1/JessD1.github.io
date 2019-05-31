@@ -41,13 +41,13 @@ p {
 /*---layout---*/
 .wrapper {
   margin:0px;
-  background-color: #fff;
+  background-color: #eaeaea;
   height:100%;
 }
 
 .header-container {
   height:85vh;
-  background-color:#e7e7e7;
+  background-color:#eaeaea;
 }
 
 @media only screen and (max-width: 500px) {
