@@ -25,7 +25,7 @@ Open Sans
 Roboto
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 h2 {
@@ -71,7 +71,7 @@ p {
   text-decoration: none;
   display:inline-block;
   color:#212426;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -90,14 +90,6 @@ p {
       padding-right:20px;
   }
 }
-
-/*
-.navcontainer li:nth-child(3) {
-  float:right;
-}
-.navcontainer li:nth-child(4) {
-  float:right;
-}
 /*---nav-end---*/
 
 /*---header-section--*/
@@ -106,7 +98,7 @@ p {
   margin-left: 40px;
   width:60%;
   margin:0 auto;
-  margin-top:120px;
+  margin-top:130px;
 }
 
 @media only screen and (max-width: 800px) {
