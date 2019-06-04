@@ -41,13 +41,12 @@ p {
 /*---layout---*/
 .wrapper {
   margin:0px;
-  background-color:#f4f4f4;
+  background-color:#f1f9f9;
   height:100%;
 }
 
 .header-container {
   height:85vh;
-  background-color:#f1f9f9;
 }
 
 @media only screen and (max-width: 500px) {
@@ -63,7 +62,6 @@ p {
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color:#f1f9f9;
 }
 
 .navcontainer a {
